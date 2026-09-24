@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Event Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Campus<span>Events</span></div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#events">Events</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="small-title">YOUR CAMPUS • YOUR EVENTS</p>
+
+            <h1>Discover What's<br>
+                <span>Happening</span> on Campus.</h1>
+
+            <p>
+                Explore technical events, cultural programs, workshops
+                and sports activities happening around your campus.
+            </p>
+
+            <a href="#events" class="hero-button">Explore Events</a>
+        </div>
+
+    </section>
+
+
+    <!-- Events Section -->
+    <section class="events-section" id="events">
+
+        <div class="section-heading">
+            <p>EVENT DIRECTORY</p>
+            <h2>Upcoming Events</h2>
+        </div>
+
+
+        <!-- Search and Filter -->
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search events..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="technical">Technical</option>
+                <option value="cultural">Cultural</option>
+                <option value="sports">Sports</option>
+                <option value="workshop">Workshop</option>
+            </select>
+
+        </div>
+
+
+        <!-- Event Container -->
+        <div class="events-container" id="eventsContainer">
+
+            <!-- Events will be created using JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <div>
+            <p class="small-title">ABOUT THE PLATFORM</p>
+
+            <h2>
+                One place for everything
+                happening on campus.
+            </h2>
+        </div>
+
+        <p>
+            Campus Event Explorer helps students discover upcoming
+            college events without having to search through multiple
+            announcements and messages.
+        </p>
+
+    </section>
+
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registrationModal">
+
+        <div class="modal-content">
+
+            <button class="close-button" id="closeModal">&times;</button>
+
+            <p class="small-title">EVENT REGISTRATION</p>
+
+            <h2 id="selectedEvent">Register for Event</h2>
+
+            <form id="registrationForm">
+
+                <label for="studentName">Your Name</label>
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your name"
+                >
+
+                <label for="studentEmail">Email</label>
+                <input
+                    type="email"
+                    id="studentEmail"
+                    placeholder="Enter your email"
+                >
+
+                <button type="submit" class="register-button">
+                    Register
+                </button>
+
+            </form>
+
+            <p id="successMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 Campus Event Explorer</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
